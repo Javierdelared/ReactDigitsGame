@@ -1,25 +1,44 @@
-import { useState } from 'react';
+import { Number } from './Number';
+import { Operation } from './Operation';
 
-export function Circle({ value }) {
-  const [selected, toggle] = useState(false);
-  function handleClick() {
-    toggle(!selected);
-  }
-  return <button data-selected={selected} className="circle" onClick={handleClick}>{value}</button>;
-}
 export default function Board() {
   return (
-    <>
-      <div className="board-row">
-        <Circle value="1" />
-        <Circle value="2" />
-        <Circle value="3" />
+    <div className='board'>
+      <div className='board-row'>
+        <Number value='1' />
+        <Number value='2' />
+        <Number value='3' />
       </div>
-      <div className="board-row">
-        <Circle value="4" />
-        <Circle value="5" />
-        <Circle value="6" />
+      <div className='board-row'>
+        <Number value='4' />
+        <Number value='5' />
+        <Number value='6' />
       </div>
-    </>
+      <div className='board-row'>
+        <Operation image='add' mathOperation={add} />
+        <Operation image='subtract' mathOperation={subtract} />
+        <Operation image='multiply' mathOperation={multiply} />
+        <Operation image='divide' mathOperation={divide} />
+      </div>
+    </div>
   );
+
+  function add(val1, val2) {
+    return val1 + val2;
+  }
+  function subtract(val1, val2) {
+    if(val1 < val2) {
+      return null;
+    }
+    return val1 - val2;
+  }
+  function multiply(val1, val2) {
+    return val1 * val2;
+  }
+  function divide(val1, val2) {
+    if(val1 % val2 !== 0) {
+      return null;
+    }
+    return val1 / val2;
+  }
 }
