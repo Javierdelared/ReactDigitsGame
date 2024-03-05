@@ -9,5 +9,34 @@ Execute the commands:
 App is deployed locally at:  
 http://localhost:3000
 
+# Tasks
+## Visual
+- [x] Numbers
+- [x] Operations
+- [x] Objective
+- [ ] Submit
+- [ ] Reset
+- [ ] Undo
+- [ ] Animations
+- [ ] Transitions
+- [ ] History
+## Logic
+- [ ] Select numbers/operation
+- [ ] Operate
+- [ ] Don't operate
+- [ ] Submit
+- [ ] Reset
+- [ ] Undo
+## Backend
+- [ ] Integration
+- [ ] Logic random game
+- [ ] Score
+- [ ] Timer
+- [ ] Difficulty
+## Others
+- [ ] Submit pop up screen
+- [ ] Get new game
+- [ ] Unit tests
+- [ ] Improve looks
 # Resources  
 Math icons by [Freepik](https://www.flaticon.com/authors/freepik)
