@@ -1,31 +1,39 @@
 import { Number } from './Number';
 import { Operation } from './Operation';
 import { Objective } from './Objective';
+import { Refresh } from './Refresh';
+import { Submit } from './Submit';
 
 export default function Board() {
   return (
-    <div>
-      <div className='objective-panel'>
+    <div id="game">
+      <div id='objective-panel'>
         <div className='row'>
           <Objective value='713' />
-         </div>
+          <Refresh image='refresh' />
+        </div>
       </div>
-      <div className='board'>
+      <div id='board'>
         <div className='row'>
           <Number value='1' />
-          <Number value='2' />
-          <Number value='3' />
+          <Number value='22' />
+          <Number value='333' />
         </div>
         <div className='row'>
-          <Number value='4' />
-          <Number value='5' />
-          <Number value='6' />
+          <Number value='43' />
+          <Number value='52' />
+          <Number value='61' />
         </div>
         <div className='row'>
           <Operation image='add' mathOperation={add} />
           <Operation image='subtract' mathOperation={subtract} />
           <Operation image='multiply' mathOperation={multiply} />
           <Operation image='divide' mathOperation={divide} />
+        </div>
+      </div>
+      <div id='submit-panel'>
+        <div className='row'>
+          <Submit />
         </div>
       </div>
     </div>

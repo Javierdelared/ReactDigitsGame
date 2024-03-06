@@ -14,8 +14,8 @@ http://localhost:3000
 - [x] Numbers
 - [x] Operations
 - [x] Objective
-- [ ] Submit
-- [ ] Reset
+- [x] Submit
+- [x] Reset
 - [ ] Undo
 - [ ] Animations
 - [ ] Transitions

@@ -5,6 +5,7 @@ export function Number({ value }) {
   const [selected, toggle] = useState(false);
   function handleClick() {
     toggle(!selected);
+    console.log(value);
   }
   var numberClasses = classNames(
     'circle',
