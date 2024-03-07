@@ -1,8 +1,4 @@
-import { Number } from './Number';
-import { Operation } from './Operation';
-import { Objective } from './Objective';
-import { Refresh } from './Refresh';
-import { Submit } from './Submit';
+import { Number, Operation, Objective, Refresh, Submit, Undo } from './buttons/Buttons';
 
 export default function Board() {
   return (
@@ -25,6 +21,7 @@ export default function Board() {
           <Number value='61' />
         </div>
         <div className='row'>
+          <Undo />
           <Operation image='add' mathOperation={add} />
           <Operation image='subtract' mathOperation={subtract} />
           <Operation image='multiply' mathOperation={multiply} />
