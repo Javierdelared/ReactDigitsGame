@@ -144,3 +144,7 @@ input:hover {
 .selected {
   background: #35e430;
 }
+
+.hidden {
+  visibility: hidden;
+}

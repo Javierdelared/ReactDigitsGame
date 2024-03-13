@@ -16,14 +16,14 @@ http://localhost:3000
 - [x] Objective
 - [x] Submit
 - [x] Reset
-- [ ] Undo
+- [x] Undo
 - [ ] Animations
 - [ ] Transitions
 - [ ] History
 ## Logic
-- [ ] Select numbers/operation
-- [ ] Operate
-- [ ] Don't operate
+- [x] Select numbers/operation
+- [x] Operate
+- [x] Don't operate
 - [ ] Submit
 - [ ] Reset
 - [ ] Undo
@@ -38,5 +38,6 @@ http://localhost:3000
 - [ ] Get new game
 - [ ] Unit tests
 - [ ] Improve looks
+- [ ] TypeScript
 # Resources  
-Math icons by [Freepik](https://www.flaticon.com/authors/freepik)
+Icons by [Freepik](https://www.flaticon.com/authors/freepik)
