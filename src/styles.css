@@ -7,19 +7,49 @@ body {
   margin: 5px;
 }
 
-#game {
+#board {
+  display: flex;
   margin: auto;
-  width: 50%;
+  width: 100%;
+  border: 0;
+}
+
+#game {
+  display: inline-block;
+  margin: auto;
+  margin-right: 5vw;
+  width: 75%;
   min-width: 140px;
   max-width: 700px;
   border: 6px solid red;
+}
+
+#history {
+  display: inline-block;
+  background: #aee4ac;
+  margin: auto;
+  margin-left: 0;
+  margin-top: 0;
+  width: 250px;
+  min-height: 250px;
+  border: 1px solid red;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 600px) {
+  #history {
+    display: none;
+  }
+  #game {
+    margin-right: auto;
+  }
 }
 
 #objective-panel {
   border: 3px solid black;
 }
 
-#board {
+#center-panel {
   border: 3px solid yellow;
 }
 
@@ -147,4 +177,19 @@ input:hover {
 
 .hidden {
   visibility: hidden;
+}
+
+.history-title {
+  display: block;
+  margin: 5px;
+  font-weight: bold;
+}
+
+.history-operation {
+  display: block;
+  background: #cfeace;
+  margin: 10px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
 }

@@ -1,8 +1,8 @@
 const operations = [
-  { name: 'add', func: add },
-  { name: 'subtract', func: subtract },
-  { name: 'multiply', func: multiply },
-  { name: 'divide', func: divide }
+  { name: 'add', symbol: '+', func: add },
+  { name: 'subtract', symbol: '-', func: subtract },
+  { name: 'multiply', symbol: 'x', func: multiply },
+  { name: 'divide', symbol: '/', func: divide }
 ];
 
 function add(val1, val2) {

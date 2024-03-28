@@ -19,14 +19,14 @@ http://localhost:3000
 - [x] Undo
 - [ ] Animations
 - [ ] Transitions
-- [ ] History
+- [x] History
 ## Logic
 - [x] Select numbers/operation
 - [x] Operate
 - [x] Don't operate
 - [ ] Submit
-- [ ] Reset
-- [ ] Undo
+- [x] Reset
+- [x] Undo
 ## Backend
 - [ ] Integration
 - [ ] Logic random game
