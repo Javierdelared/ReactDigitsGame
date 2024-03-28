@@ -1,7 +1,8 @@
 import { useState } from 'react';
 import classNames from 'classnames';
 
-export function Number({ value, isSelected, isVisible, onClick }) {
+export function Number({ state, onClick }) {
+  const { value, isSelected, isVisible } = state;
   var numberClasses = classNames(
     'circle',
     { 'selected': isSelected },
